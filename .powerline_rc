@@ -1,0 +1,16 @@
+# Powerline - see https://medium.com/@ITZDERR/how-to-install-powerline-to-pimp-your-bash-prompt-for-mac-9b82b03b1c02
+
+# Brew install python3
+# pip3 install powerline-status
+# pip3 show powerline-status -> note the location of powerline.
+
+# Copy config:
+# mkdir ~/.config/powerline
+# cp -r #{powerline location}/powerline/config_files/ ~/.config/powerline/
+
+alias python=python3
+# Powerline
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh

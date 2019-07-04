@@ -1,0 +1,24 @@
+[user]
+	name = Bart Stroeken
+	email = bart.stroeken@gmail.com
+[core]
+	excludesfile = /Users/bartstroeken/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[credential]
+	helper = osxkeychain
+[push]
+	default = matching
+[alias]
+	incoming = "!git remote update -p; git log ..@{u}"
+	outgoing = log @{u}..
+	yolo = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
+[commit]
+	template = /Users/bartstroeken/.stCommitMsg
+[clone]
+  quiet = true
+

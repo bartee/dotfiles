@@ -1,0 +1,19 @@
+# Tree with colors, ignore .hg and .git repositories
+alias tree='tree -C -A -a -I .hg -I .git'
+
+# Open vim (from brew) when calling vi
+alias vi=$(brew --prefix)/bin/vim
+
+alias flushcache='redis-cli flushall && echo "flush_all" | nc localhost 11211'
+alias passwordhash='openssl rand -base64 '
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl '
+alias fuck='$(thefuck $(fc -ln -1))'
+alias charm='open -a /Applications/PyCharm.app'
+
+# Shortcut for running veewee without 'bundle exec'
+alias veewee='bundle exec veewee'
+alias ll='ls -alF'
+
+# TMUX
+alias mux='tmuxinator'
+
