@@ -9,7 +9,7 @@ alias passwordhash='openssl rand -base64 '
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl '
 alias fuck='$(thefuck $(fc -ln -1))'
 alias charm='open -a /Applications/PyCharm.app'
-
+alias sourcetree='open -a SourceTree'
 # Shortcut for running veewee without 'bundle exec'
 alias veewee='bundle exec veewee'
 alias ll='ls -alF'
@@ -17,3 +17,7 @@ alias ll='ls -alF'
 # TMUX
 alias mux='tmuxinator'
 
+# k8s
+alias kctx="kubectx"
+alias kns="kubens"
+alias kctl="kubectl"

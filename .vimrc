@@ -33,7 +33,7 @@ set showcmd			    " In the status bar, show incomplete commands
                     " as they are typed
 
 set showmode        " display the current mode (Insert, Visual, Replace)
-                    " in the status line. 
+                    " in the status line.
 
 set ruler			      " Always display the current cursor position in
                     " the Status Bar
@@ -60,7 +60,7 @@ set expandtab
 " ----------------------------------------------------------------------------
 "  Diff mode {{{1
 " ----------------------------------------------------------------------------
-set diffopt+=vertical       " start diff mode with vertical splits by default
+" set diffopt+=vertical       " start diff mode with vertical splits by default
 
 " ----------------------------------------------------------------------------
 "  Folding {{{1
@@ -183,7 +183,7 @@ autocmd FocusGained * :set relativenumber
 
 
 " autocmd FileType python let &makeprg='pylint %\|sed "s/^\(\w*\):\s*\([0-9]\+\)/%:\2:\ \1:\ /g"'
-" autocmd BufWritePost *.py make 
+" autocmd BufWritePost *.py make
 
 
 
@@ -226,7 +226,7 @@ endif
 
 " Search
 set showmatch                   " show matching brackets/parenthesis
-set mat=2 
+set mat=2
 set hlsearch                    " highlight search terms
 
 " For regular expressions turn magic on
@@ -269,6 +269,6 @@ endfunction
 call InitializeDirectories()
 
 " powerline
-set rtp+=/usr/local/lib/python3.7/site-packages/powerline/bindings/vim
+set rtp+=/usr/local/lib/python3.9/site-packages/powerline/bindings/vim
 set laststatus=2
 set t_Co=256
