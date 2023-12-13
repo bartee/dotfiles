@@ -8,7 +8,7 @@ Everyone has its own set of dotfiles. These are mine - based on Powerline. It sh
 
 When starting, you'll need to add brew
 
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 VIM
 
@@ -32,5 +32,3 @@ Git
 I've also added a few handy git aliases:
 - incoming: list incoming changes
 - outgoing: what's only in here, but on on the remote(s)
-- yolo: generate a commit message :-)
-

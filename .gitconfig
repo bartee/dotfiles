@@ -1,6 +1,6 @@
 [user]
 	name = Bart Stroeken
-	email = bart.stroeken@gmail.com
+	email = bstroeken@bol.com
 [core]
 	excludesfile = /Users/bartstroeken/.gitignore_global
 [difftool "sourcetree"]
@@ -16,7 +16,6 @@
 [alias]
 	incoming = "!git remote update -p; git log ..@{u}"
 	outgoing = log @{u}..
-	yolo = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
 [commit]
 	template = /Users/bartstroeken/.stCommitMsg
 [clone]

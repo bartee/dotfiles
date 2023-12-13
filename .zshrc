@@ -30,7 +30,7 @@ ZSH_THEME="agnoster"
 # DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -39,7 +39,7 @@ ZSH_THEME="agnoster"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -58,7 +58,7 @@ COMPLETION_WAITING_DOTS="true"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="yyyy-mm-dd"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would yo  122  2020-09-08  kctl get podsu like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -69,7 +69,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-
+export ZSH_COMPLETION=$ZSH/.cache/.zcompdump-$HOST 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -101,8 +101,8 @@ export NVM_DIR="$HOME/.nvm"
 
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 
-source /usr/local/opt/kube-ps1/share/kube-ps1.sh
-source ~/.dotfiles/authentication_scripts.sh
+source /opt/homebrew/opt/kube-ps1/share/kube-ps1.sh
+# source ~/.dotfiles/authentication_scripts.sh
 source ~/.dotfiles/utility_scripts.sh
 # (The below instructions are intended for common
 # shell setups. See the README for more guidance
